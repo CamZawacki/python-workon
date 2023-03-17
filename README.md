@@ -1,5 +1,5 @@
 # python-workon
-Forever ago, I used the [virtualenvwrapper](https://github.com/python-virtualenvwrapper/virtualenvwrapper) extension to manage my python virtual enviornments. Somewhere inbetween then and now I switch to `venv`. However, everytime I step away from my python projects for a bit, I come back and expect the command 'workon' to list the enviornments and 'workon [env_name]' to activate the environment. So thats what this does.
+Forever ago I used the [virtualenvwrapper](https://github.com/python-virtualenvwrapper/virtualenvwrapper) extension to manage my python virtual enviornments. Somewhere inbetween then and now I switch to `venv`. However, everytime I step away from my python projects for a bit, I come back and expect the command 'workon' to list the enviornments and 'workon [env_name]' to activate the environment. So thats what this does.
 
 
 Two things need to be added to your .bashrc for this to work. First, a path to the location of your python environments:
