@@ -6,7 +6,6 @@ Two things need to be added to your .bashrc for this to work. First, a path to t
 ```bash
 export PYTHON_ENV_HOME="~/environments"
 ```
-export PYTHON_ENV_HOME="~/environments"
 Second, sourcing the workon script.
 
 ```bash
@@ -16,6 +15,11 @@ source <path-to-python-workon>/workon.sh
 
 
 ## Commands
+This works for environments created using the command
+```bash
+python -m venv new_env
+```
+
 It's very stupid. The two commands are as follows:
 ```bash
 workon
@@ -24,6 +28,6 @@ which does not even know if the directory is a python enviornment, it just list 
 ```bash
 workon [env_name]
 ```
-which tries to activate an environment with the provided name.
+which tries to activate an environment with the provided name by looking for `$PYTHON_ENV_HOME/env_name/bin/activate`.
 
 Enjoy.
