@@ -9,8 +9,7 @@ function workon() {
 	# If not, try to activate the env
 	search_dir=$PYTHON_ENV_HOME
 	flag=false
-	for entry in "$search_dir"/*
-	do
+	for entry in "$search_dir"*;do
             env=$(basename $entry)
             if [ "$env" = "$1" ]; then
     		source $PYTHON_ENV_HOME/$env/bin/activate
